@@ -18,7 +18,7 @@
         </div>
     </div>
     <!--Top section-->
-    <div class="d-flex justify-content-around bg-light ">
+    <div class="d-flex justify-content-around bg-light">
         <nav class="navbar navbar-expand-lg navbar-light nav-bar-container">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"> <img src="https://ciseco-reactjs.vercel.app/static/media/logo.95d47bbac8db6c1e8f997bbf26ca05cf.svg" class="nav-bar-logo d-flex flex-row justify-content-center "></a>
@@ -86,7 +86,7 @@
     <div class="container">
         <div class="mt-3 p-3">
             <h1 class="Checkout-heading">Checkout</h1>
-            <p>Homepage / Clothing Categories / <span class="checkoutDecoration">Checkout</span></p>
+            <p>Homepage / Clothing Categories / <a href="#"><span class="checkoutDecoration">Checkout</span></a></p>
         </div>
         <div class="row">
             <div class="col-md-6 p-5" style="border-right: 1px solid #d4d7dd;">
@@ -113,9 +113,8 @@
                 <div class="shipping-address-container col-sm-12">
                     <div class="p-3 d-flex flex-row">
                         <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle Icon" viewBox="0 0 16 16">
-                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="currentColor" class="bi bi-arrow-left-right Icon" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z" />
                             </svg>
                         </div>
                         <div class="d-flex flex-column">
@@ -138,29 +137,29 @@
                             <div class="d-md-flex flex-md-row w-100">
                                 <div class="mb-3 col-sm-12 col-md-6">
                                     <label for="name" class="shipping-address-text">First Name</label> <br>
-                                    <input type="text" class="shipping-address-input" id="name" />
+                                    <input type="text" class="shipping-address-input" id="name" placeholder="Cole" />
                                 </div>
                                 <div class="mb-3 col-sm-12 col-md-6">
                                     <label for="lastname" class="shipping-address-text">Last Name</label><br>
-                                    <input type="text" class="shipping-address-input" id="lastname" />
+                                    <input type="text" class="shipping-address-input" id="lastname" placeholder="Enrico" />
                                     <p id="emailErrMsg" class="error-message"></p>
                                 </div>
                             </div>
                             <div class="d-md-flex flex-md-row w-100">
                                 <div class="mb-3 col-sm-12 col-md-6">
                                     <label for="address" class="shipping-address-text">Address</label><br>
-                                    <input type="text" class="shipping-address-input" id="address" />
+                                    <input type="text" class="shipping-address-input" id="address" placeholder="123, Dream Avenue, USA" />
                                 </div>
                                 <div class="mb-3 col-sm-12 col-md-6">
                                     <label for="suite" class="shipping-address-text">Apt,Suite*</label><br>
-                                    <input type="text" class="shipping-address-input " id="suite" />
+                                    <input type="text" class="shipping-address-input " id="suite" placeholder="55U - DD5" />
                                     <p id="emailErrMsg" class="error-message"></p>
                                 </div>
                             </div>
                             <div class="d-md-flex flex-md-row w-100">
                                 <div class="mb-3 col-sm-12 col-md-6">
                                     <label for="city" class="shipping-address-text">City</label><br>
-                                    <input type="text" class="shipping-address-input " id="city" />
+                                    <input type="text" class="shipping-address-input " id="city" placeholder="Norris" />
                                     <p id="emailErrMsg" class="error-message"></p>
                                 </div>
                                 <div class="mb-3 col-sm-12 col-md-6">
@@ -176,12 +175,12 @@
                             <div class="d-md-flex flex-md-row w-100">
                                 <div class="mb-3 col-sm-12 col-md-6">
                                     <label for="state" class="shipping-address-text">State/Province</label><br>
-                                    <input type="text" class="shipping-address-input " id="state" />
+                                    <input type="text" class="shipping-address-input " id="state" placeholder="Texas" />
                                     <p id="emailErrMsg" class="error-message"></p>
                                 </div>
                                 <div class="mb-3 col-sm-12 col-md-6">
                                     <label for="postalcode" class="shipping-address-text">Postal code</label><br>
-                                    <input type="text" class="shipping-address-input " id="postalcode" />
+                                    <input type="text" class="shipping-address-input " id="postalcode" placeholder="2500" />
                                     <p id="emailErrMsg" class="error-message"></p>
                                 </div>
                             </div>
@@ -470,12 +469,6 @@
                 </div>
             </div>
         </div>
-
-
-        <!--Contact Info-->
-
-        <!--Middle Section section-->
-        <!--Bottom Section-->
     </div>
 
 </body>
